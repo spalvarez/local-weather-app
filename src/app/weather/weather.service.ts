@@ -22,12 +22,12 @@ interface ICurrentWeatherData {
   name: string
 }
 
-@Injectable({
-  providedIn: 'root',
-})
 export interface IWeatherService {
   getCurrentWeather(city: string, country: string): Observable<ICurrentWeather>
 }
+@Injectable({
+  providedIn: 'root',
+})
 export class WeatherService implements IWeatherService {
   constructor(private httpClient: HttpClient) {}
 
