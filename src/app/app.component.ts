@@ -28,6 +28,4 @@ import { Component } from '@angular/core'
     </div>
   `,
 })
-export class AppComponent {
-  title = 'AwesomeWeatherApp'
-}
+export class AppComponent {}
